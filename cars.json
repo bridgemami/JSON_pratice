@@ -1,0 +1,17 @@
+[
+  {
+    "type" : "toyota", "model": "yaris","color":"blue"
+    },
+  {
+    "type" : "honda", "model": "civic","color":"sliver"
+    },
+  {
+    "type" : "ford", "model": "focus","color":"black"
+    },
+  {
+    "type" : "chevy", "model": "bolt","color":"red"
+    },
+  {
+    "type" : "bmw", "model": "i3","color":"yellow"
+    }
+  ]

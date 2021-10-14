@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--<script>
+      var car = {type: 'toyota', model: 'yaris', color: 'blue'}; 
+console.log(car.color);
+
+var car = {"type" : "toyota", "model": "yaris","color":"blue"};
+console.log(car.model);
+var cars = 
+[
+  {"type" : "toyota", "model": "yaris","color":"blue"},
+  {"type" : "honda", "model": "civic","color":"sliver"},
+  {"type" : "ford", "model": "focus","color":"black"}];
+console.log(cars[1].model);
+console.log(cars[0].color);
+for (c=0; c < cars.length; c++) {
+  document.write('<h1>Brand: ' + cars[c].type + '</h1>');
+  document.write('<h2>Model: ' + cars[c].model + '</h2>');
+  document.write('<h3>Color: ' + cars[c].color + '</h3>');
+}
+
+    </script>-->
+    <script>
+      console.log('getting json data');
+$.getJSON("cars.json",
+function (cars) {
+  console.log('got the JSON');
+  for (c=0; c < cars.length; c++) {
+  document.write('<h1>Brand: ' + cars[c].type + '</h1>');
+  document.write('<h2>Model: ' + cars[c].model + '</h2>');
+  document.write('<h3>Color: ' + cars[c].color + '</h3>');
+}
+}
+)
+      </script>
+  </body>
+</html>
